@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bizim Toptan</title>
+    <style>
+        .col-2{
+            margin-left: 100px;
+        }
+        .card{
+            text-align: center;
+            float: left;
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            border: 1px solid #dedede;
+            margin-left: 50px;
+        }
+        .mainmenubtn {
+            background-color: rgb(198, 211, 221);
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding:20px;
+            margin-top:20px;
+        }
+        .mainmenubtn:hover {
+            background-color: red;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-child {
+            display: none;
+            min-width: 200px;
+        }
+        .dropdown-child a {
+            color: white;
+            padding: 20px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown:hover .dropdown-child {
+            display: block;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            display:inline-block;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover{
+            background-color:#f39c12; 
+        }
+
+        ul li ul {
+            background-color:#2c3e50;
+            display:none;
+            position:absolute;
+            width:100px
+        }
+
+        ul li:hover ul{
+            display:block;
+        }
+        li ul li {
+            display:block; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul> 
+            <li> Kurumsal</li>
+            <li> Yatırımcı İlişkileri </li>
+            <li> E-katalog</li>
+        </ul>
+    </div>
+                <div class="col-3">
+                    LOgo
+                </div>
+                <div class="col-6">
+                    <form>
+                        <div id="box">
+                            <input type="text" id="search" placeholder="Ara..">
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-3">
+                    Giriş Yap
+                    Sepetim
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div class="dropdown">
+        <ul>
+            <button class="mainmenubtn"> Tüm Kategoriler</button>
+            <li class="dropdown-child">Temel Gıda</li>
+                <ul>
+                    <li class="dropdown-child">Bakliyat-Bulgur-Pirinç</li>
+                    <li class="dropdown-child">Çorba</li>
+                    <li class="dropdown-child">Hamur ve Pasta Malzemeleri</li>
+                    <li class="dropdown-child">Ketçap - Mayonez - Soslar</li>
+                    <li class="dropdown-child">Konserve- Salça</li>
+                    <li class="dropdown-child">Makarnalar</li>
+                    <li class="dropdown-child">Özel Bakliyatlar</li>
+                    <li class="dropdown-child">Sıvı Yağlar</li>
+                    <li class="dropdown-child">Şeker</li>
+                    <li class="dropdown-child">Tuz - Baharat - Bulyon</li>
+                    <li class="dropdown-child">Un</li>
+                </ul>
+            <li class="dropdown-child">Şarküteri & Kahvaltılık</li>
+                <ul>
+                    <li class="dropdown-child">Bal & Reçel</li>
+                    <li class="dropdown-child">Helva Tahin Pekmez</li>
+                    <li class="dropdown-child">Krem Çikolata ve Ezmeler</li>
+                    <li class="dropdown-child">Mısır Gevreği & Yulaf</li>
+                    <li class="dropdown-child">Peynir</li>
+                    <li class="dropdown-child">Süt & Süt Ürünleri</li>
+                    <li class="dropdown-child">Zeytin</li>
+                </ul>
+            <li class="dropdown-child">Atıştırmalık</li>
+                <ul>
+                    <li class="dropdown-child">Bisküvi & Kek & Gofret</li>
+                    <li class="dropdown-child">Çikolata & Çikolata Kaplamalı</li>
+                    <li class="dropdown-child">Kuruyemiş ve Cips</li>
+                    <li class="dropdown-child">Sakız & Şekerleme</li>
+                </ul>
+            <li class="dropdown-child">İçecekler</li>
+                <ul>
+                    <li class="dropdown-child">Çay & Kahve</li>
+                    <li class="dropdown-child">Gazlı İçecekler</li>
+                    <li class="dropdown-child">Gazsız İçecekler</li>
+                    <li class="dropdown-child">Toz İçecekler</li>
+                </ul>
+            <li class="dropdown-child">Temizlik</li>
+                <ul>
+                    <li class="dropdown-child">Bulaşık</li>
+                    <li class="dropdown-child">Çamaşır</li>
+                    <li class="dropdown-child">Ev Temizleyici</li>
+                    <li class="dropdown-child">Kağıt & Peçete & Mendil</li>
+                    <li class="dropdown-child">Mutfak Yardımcıları</li>
+                    <li class="dropdown-child">Sabun</li>
+                </ul>
+            <li class="dropdown-child">Kişisel Bakım</li>
+                <ul>
+                    <li class="dropdown-child">Ağız Bakım Ürünleri</li>
+                    <li class="dropdown-child">Banyo & Duş</li>
+                    <li class="dropdown-child">Erkek Bakım & Kozmetik</li>
+                    <li class="dropdown-child">Kadın Bakım & Kozmetik</li>
+                    <li class="dropdown-child">Kolonya</li>
+                    <li class="dropdown-child">Saç Bakım</li>
+                    <li class="dropdown-child">Sağlık & Hasta Bakım </li>
+                    <li class="dropdown-child">Vücut & El & Ayak Bakım</li>
+                    <li class="dropdown-child">Yüz Bakım</li>
+                </ul>
+            <li class="dropdown-child">Gıda dışı</li>
+                <ul>
+                    <li class="dropdown-child">Elektrikli ve Elektronik Ev Aletleri</li>
+                    <li class="dropdown-child">Evcil Hayvan Mamaları</li>
+                    <li class="dropdown-child">Giyim & Ayakkabı & Aksesuar</li>
+                    <li class="dropdown-child">Haşare Öldürücüler</li>
+                    <li class="dropdown-child">Kırtasiye</li>
+                    <li class="dropdown-child">Mutfak Yardımcıları</li>
+                    <li class="dropdown-child">Züccaciye ve Ev Eşyaları</li>
+                </ul>
+            <li class="dropdown-child">Bebek ürünleri</li>
+                <ul>
+                    <li class="dropdown-child">Bebek Bakım Ürünleri</li>
+                    <li class="dropdown-child">Bebek Bezi</li>
+                    <li class="dropdown-child">Bebek Maması</li>
+                    <li class="dropdown-child">Bebek Sabunu</li>
+                    <li class="dropdown-child">Bebek Saç Şampuanı</li>
+                    <li class="dropdown-child">Islak Havlu & Mendil</li>
+                </ul>
+        </ul>
+        Kampanyalar
+        <ul>
+            <li class="dropdown-child">Kargo ile teslimat</li>
+            <li class="dropdown-child">Tıkla Gel Al</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div class="w3-card-12">
+                    <img src="brickwall.jfif" alt="x">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="w3-card-12">
+                    <img src="brickwall.jfif" alt="x">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="w3-card-12">
+                    <img src="brickwall.jfif" alt="x">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="w3-card-12">
+                    <img src="brickwall.jfif" alt="x">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                Çok Satanlar
+            </div>
+            <div class="col-4">
+                Yeni Ürünler
+            </div>
+            <div class="col-4">
+                Fırsat Ürünleri
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <div class="card">
+                    Osmancık Pirinç
+                    <button>Sepete Ekle</button>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card">
+                    Osmancık Pirinç
+                    <button>Sepete Ekle</button>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card">
+                    Osmancık Pirinç
+                    <button>Sepete Ekle</button>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card">
+                    Osmancık Pirinç
+                    <button>Sepete Ekle</button>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card">
+                    Osmancık Pirinç
+                    <button>Sepete Ekle</button>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card">
+    
+                    Osmancık Pirinç
+                    <button>Sepete Ekle</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <img src="brickwall.jfif" alt="x">
+            </div>
+            <div class="col-3">
+                <img src="brickwall.jfif" alt="x">
+            </div>
+            <div class="col-3">
+                <img src="brickwall.jfif" alt="x">
+            </div>
+            <div class="col-3">
+                <img src="brickwall.jfif" alt="x">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        Bizim Toptan'a Özel
+        <div class="row">
+            <div class="col-2">
+                <div class="card">
+                    Koçbaşı Nohut
+                    <button>Sepete Ekle</button>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card">
+                    Koçbaşı Nohut
+                    <button>Sepete Ekle</button>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card">
+                    Koçbaşı Nohut
+                    <button>Sepete Ekle</button>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card">
+                    Koçbaşı Nohut
+                    <button>Sepete Ekle</button>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card">
+                    Koçbaşı Nohut
+                    <button>Sepete Ekle</button>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card">
+                    Koçbaşı Nohut
+                    <button>Sepete Ekle</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <img src="brickwall.jfif" alt="x">
+            </div>
+            <div class="col-3">
+                <img src="brickwall.jfif" alt="x">
+            </div>
+            <div class="col-3">
+                <img src="brickwall.jfif" alt="x">
+            </div>
+            <div class="col-3">
+                <img src="brickwall.jfif" alt="x">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        Popüler Ürünler
+        <div class="row">
+            <div class="col-2">
+                <div class="card">
+                    Koçbaşı Nohut
+                    <button>Sepete Ekle</button>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card">
+                    Koçbaşı Nohut
+                    <button>Sepete Ekle</button>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card">
+                    Koçbaşı Nohut
+                    <button>Sepete Ekle</button>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card">
+                    Koçbaşı Nohut
+                    <button>Sepete Ekle</button>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card">
+                    Koçbaşı Nohut
+                    <button>Sepete Ekle</button>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card">
+                    Koçbaşı Nohut
+                    <button>Sepete Ekle</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
