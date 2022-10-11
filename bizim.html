@@ -8,17 +8,33 @@
     <title>Bizim Toptan</title>
     <style>
         .col-2{
-            margin-left: 100px;
+            margin-left: 68px;
         }
-        .card{
+/*Kartlar*/ 
+        .card {
+            max-width: 172px;
+            margin: auto;
             text-align: center;
             float: left;
-            width: 100px;
-            height: 100px;
             padding: 10px;
             border: 1px solid #dedede;
-            margin-left: 50px;
         }
+        .price {
+            color: rgb(40, 37, 212);
+            font-size: 22px;
+        }
+        .card button {
+            border: none;
+            outline: 0;
+            padding: 12px;
+            color: white;
+            background-color: rgb(16, 89, 184);
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 15px;
+        }
+/**/
         .mainmenubtn {
             background-color: rgb(198, 211, 221);
             color: white;
@@ -149,6 +165,7 @@
         display: none;
         }
         .gorsel {
+            margin-top: 50px;
             margin-left: 50px;
         }
         .x{
@@ -159,16 +176,34 @@
             margin-left: 60px;
             float: right;
         }
+        .topnav {
+            overflow: hidden;
+        }
+
+        .topnav a {
+            float: left;
+            color: #304dcc;
+            text-align: center;
+            padding-left: 50px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a.split {
+            float: right;
+            color: #304dcc;
+            padding-right: 50px;
+        }
     </style>
 </head>
 
 <body>
     <div class="navbar">
-        <ul> 
-            <li> Kurumsal</li>
-            <li> Yatırımcı İlişkileri </li>
-            <li> E-katalog</li>
-        </ul>
+        <div class="topnav">
+            <a href="#home">Kurumsal</a>
+            <a href="#news">Yatırımcı İlişkileri</a>
+            <a href="#about" class="split">E-Katalog</a>
+        </div>
     </div>
                 <div class="col-3">
                     LOgo
@@ -306,22 +341,22 @@
         <div class="row">
             <div class="gorsel">
                 <div class="x">
-                    <img src="brickwall.jfif" alt="x">
+                    <img class="resim" src="brickwall.jfif" alt="x">
                 </div>
             </div>
             <div class="col-3">
                 <div class="x">
-                    <img src="brickwall.jfif" alt="x">
+                    <img class="resim" src="brickwall.jfif" alt="x">
                 </div>
             </div>
             <div class="col-3">
                 <div class="x">
-                    <img src="brickwall.jfif" alt="x">
+                    <img class="resim" src="brickwall.jfif" alt="x">
                 </div>
             </div>
             <div class="col-3">
                 <div class="x">
-                    <img src="brickwall.jfif" alt="x">
+                    <img class="resim" src="brickwall.jfif" alt="x">
                 </div>
             </div>
         </div>
@@ -332,7 +367,7 @@
                 Çok Satanlar
             </div>
             <div class="x-1">
-                Yeni Ürünler
+                 Yeni Ürünler
             </div>
             <div class="x-1">
                 Fırsat Ürünleri
@@ -345,55 +380,66 @@
                 <br>
                 <br>
                 <div class="card">
-                    Osmancık Pirinç
-                    <button>Sepete Ekle</button>
+                    <img src="brickwall.jfif" alt="" style="width: 100%;">
+                    <h2> Osmancık Pirinç</h2>
+                    <p class="price">30₺</p>
+                    <p><button>Sepete Ekle</button></p>
                 </div>
             </div>
             <div class="col-2">
                 <div class="card">
-                    Osmancık Pirinç
-                    <button>Sepete Ekle</button>
+                    <img src="brickwall.jfif" alt="" style="width: 100%;">
+                    <h2> Osmancık Pirinç</h2>
+                    <p class="price">30₺</p>
+                    <p><button>Sepete Ekle</button></p>
                 </div>
             </div>
             <div class="col-2">
                 <div class="card">
-                    Osmancık Pirinç
-                    <button>Sepete Ekle</button>
+                    <img src="brickwall.jfif" alt="" style="width: 100%;">
+                    <h2> Osmancık Pirinç</h2>
+                    <p class="price">30₺</p>
+                    <p><button>Sepete Ekle</button></p>
                 </div>
             </div>
             <div class="col-2">
                 <div class="card">
-                    Osmancık Pirinç
-                    <button>Sepete Ekle</button>
+                    <img src="brickwall.jfif" alt="" style="width: 100%;">
+                    <h2> Osmancık Pirinç</h2>
+                    <p class="price">30₺</p>
+                    <p><button>Sepete Ekle</button></p>
                 </div>
             </div>
             <div class="col-2">
                 <div class="card">
-                    Osmancık Pirinç
-                    <button>Sepete Ekle</button>
+                    <img src="brickwall.jfif" alt="" style="width: 100%;">
+                    <h2> Osmancık Pirinç</h2>
+                    <p class="price">30₺</p>
+                    <p><button>Sepete Ekle</button></p>
                 </div>
             </div>
             <div class="col-2">
                 <div class="card">
-    
-                    Osmancık Pirinç
-                    <button>Sepete Ekle</button>
+                    <img src="brickwall.jfif" alt="" style="width: 100%;">
+                    <h2> Osmancık Pirinç</h2>
+                    <p class="price">30₺</p>
+                    <p><button>Sepete Ekle</button></p>
                 </div>
             </div>
         </div>
     </div>
     <div class="container">
-        <div class="row">
-            <div class="col-3">
+        <div class="gorsel">
+            <div class="x">
                 <img src="brickwall.jfif" alt="x">
             </div>
-            <div class="col-3">
+            <div class="x">
                 <img src="brickwall.jfif" alt="x">
             </div>
-            <div class="col-3">
+            <div class="x">
                 <img src="brickwall.jfif" alt="x">
             </div>
-            <div class="col-3">
+            <div class="x">
                 <img src="brickwall.jfif" alt="x">
             </div>
         </div>
@@ -403,54 +449,66 @@
         <div class="row">
             <div class="col-2">
                 <div class="card">
-                    Koçbaşı Nohut
-                    <button>Sepete Ekle</button>
+                    <img src="brickwall.jfif" alt="" style="width: 100%;">
+                    <h2> Koçbaşı Nohut</h2>
+                    <p class="price">30₺</p>
+                    <p><button>Sepete Ekle</button></p>
                 </div>
             </div>
             <div class="col-2">
                 <div class="card">
-                    Koçbaşı Nohut
-                    <button>Sepete Ekle</button>
+                    <img src="brickwall.jfif" alt="" style="width: 100%;">
+                    <h2> Koçbaşı Nohut</h2>
+                    <p class="price">30₺</p>
+                    <p><button>Sepete Ekle</button></p>
                 </div>
             </div>
             <div class="col-2">
                 <div class="card">
-                    Koçbaşı Nohut
-                    <button>Sepete Ekle</button>
+                    <img src="brickwall.jfif" alt="" style="width: 100%;">
+                    <h2> Koçbaşı Nohut</h2>
+                    <p class="price">30₺</p>
+                    <p><button>Sepete Ekle</button></p>
                 </div>
             </div>
             <div class="col-2">
                 <div class="card">
-                    Koçbaşı Nohut
-                    <button>Sepete Ekle</button>
+                    <img src="brickwall.jfif" alt="" style="width: 100%;">
+                    <h2> Koçbaşı Nohut</h2>
+                    <p class="price">30₺</p>
+                    <p><button>Sepete Ekle</button></p>
                 </div>
             </div>
             <div class="col-2">
                 <div class="card">
-                    Koçbaşı Nohut
-                    <button>Sepete Ekle</button>
+                    <img src="brickwall.jfif" alt="" style="width: 100%;">
+                    <h2> Koçbaşı Nohut</h2>
+                    <p class="price">30₺</p>
+                    <p><button>Sepete Ekle</button></p>
                 </div>
             </div>
             <div class="col-2">
                 <div class="card">
-                    Koçbaşı Nohut
-                    <button>Sepete Ekle</button>
+                    <img src="brickwall.jfif" alt="" style="width: 100%;">
+                    <h2> Koçbaşı Nohut</h2>
+                    <p class="price">30₺</p>
+                    <p><button>Sepete Ekle</button></p>
                 </div>
             </div>
         </div>
     </div>
     <div class="container">
-        <div class="row">
-            <div class="col-3">
+        <div class="gorsel">
+            <div class="x">
                 <img src="brickwall.jfif" alt="x">
             </div>
-            <div class="col-3">
+            <div class="x">
                 <img src="brickwall.jfif" alt="x">
             </div>
-            <div class="col-3">
+            <div class="x">
                 <img src="brickwall.jfif" alt="x">
             </div>
-            <div class="col-3">
+            <div class="x">
                 <img src="brickwall.jfif" alt="x">
             </div>
         </div>
@@ -460,38 +518,50 @@
         <div class="row">
             <div class="col-2">
                 <div class="card">
-                    Koçbaşı Nohut
-                    <button>Sepete Ekle</button>
+                    <img src="brickwall.jfif" alt="" style="width: 100%;">
+                    <h2> Koçbaşı Nohut</h2>
+                    <p class="price">30₺</p>
+                    <p><button>Sepete Ekle</button></p>
                 </div>
             </div>
             <div class="col-2">
                 <div class="card">
-                    Koçbaşı Nohut
-                    <button>Sepete Ekle</button>
+                    <img src="brickwall.jfif" alt="" style="width: 100%;">
+                    <h2> Koçbaşı Nohut</h2>
+                    <p class="price">30₺</p>
+                    <p><button>Sepete Ekle</button></p>
                 </div>
             </div>
             <div class="col-2">
                 <div class="card">
-                    Koçbaşı Nohut
-                    <button>Sepete Ekle</button>
+                    <img src="brickwall.jfif" alt="" style="width: 100%;">
+                    <h2> Koçbaşı Nohut</h2>
+                    <p class="price">30₺</p>
+                    <p><button>Sepete Ekle</button></p>
                 </div>
             </div>
             <div class="col-2">
                 <div class="card">
-                    Koçbaşı Nohut
-                    <button>Sepete Ekle</button>
+                    <img src="brickwall.jfif" alt="" style="width: 100%;">
+                    <h2> Koçbaşı Nohut</h2>
+                    <p class="price">30₺</p>
+                    <p><button>Sepete Ekle</button></p>
                 </div>
             </div>
             <div class="col-2">
                 <div class="card">
-                    Koçbaşı Nohut
-                    <button>Sepete Ekle</button>
+                    <img src="brickwall.jfif" alt="" style="width: 100%;">
+                    <h2> Koçbaşı Nohut</h2>
+                    <p class="price">30₺</p>
+                    <p><button>Sepete Ekle</button></p>
                 </div>
             </div>
             <div class="col-2">
                 <div class="card">
-                    Koçbaşı Nohut
-                    <button>Sepete Ekle</button>
+                    <img src="brickwall.jfif" alt="" style="width: 100%;">
+                    <h2> Koçbaşı Nohut</h2>
+                    <p class="price">30₺</p>
+                    <p><button>Sepete Ekle</button></p>
                 </div>
             </div>
         </div>
